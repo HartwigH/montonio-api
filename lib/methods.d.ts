@@ -1,5 +1,5 @@
-import { CountryCode, Credentials, UserOpts } from './types';
-export declare const makePaymentUrl: ({ secrectKey, accessKey, sandbox }: Credentials, { amount, currency, merchant_reference, merchant_return_url, preselected_aspsp }: UserOpts) => string;
+import { CountryCode, Credentials, UserOpts } from "./types";
+export declare const makePaymentUrl: ({ secrectKey, accessKey, sandbox }: Credentials, { amount, currency, merchant_reference, merchant_return_url, merchant_notification_url, preselected_aspsp, }: UserOpts) => string;
 /**
  * Displaying the List of Available Banks
  * Pass a country_code to get banks for specific country e.g 'FI' | 'EE' | 'LV' | 'LT'
