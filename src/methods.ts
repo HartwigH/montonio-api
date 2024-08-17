@@ -55,6 +55,7 @@ export const getMethods = async (
       algorithm: "HS256",
       expiresIn: "1h",
     });
+    console.log("token", token);
     const resp = await axios(baseUrl, {
       headers: { Authorization: `Bearer ${token}` },
     });
