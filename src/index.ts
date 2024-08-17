@@ -10,5 +10,5 @@ export const montonioApi = ({
     makePaymentUrl({ secrectKey, accessKey, sandbox }, options),
   paymentMethods: (lang: CountryCode) =>
     getMethods({ secrectKey, accessKey, sandbox }, lang),
-  getToken: () => getToken({ accessKey, secrectKey }),
+  getUserToken: () => getToken({ accessKey, secrectKey }),
 });
