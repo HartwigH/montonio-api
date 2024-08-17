@@ -51,6 +51,7 @@ export const getMethods = async (
     const payload = {
       access_key: accessKey,
     };
+    console.log("payload", payload);
     const token = jwt.sign(payload, secrectKey, {
       algorithm: "HS256",
       expiresIn: "1h",
