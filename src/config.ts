@@ -1,8 +1,13 @@
-'use strict'
-const sandboxUrl = 'https://sandbox-payments.montonio.com'
-const productionUrl = 'https://payments.montonio.com'
-const sandboxMethods = 'https://api.sandbox-payments.montonio.com/pis/v2/merchants/aspsps'
-const prodcutionMethods = 'https://api.payments.montonio.com/pis/v2/merchants/aspsps'
+"use strict";
+const sandboxUrl = "https://sandbox-stargate.montonio.com/api";
+const productionUrl = "https://stargate.montonio.com/api";
+const sandboxMethods =
+  "https://sandbox-stargate.montonio.com/api/stores/payment-methods";
+const prodcutionMethods =
+  "https://stargate.montonio.com/api/stores/payment-methods";
 export const config = {
-  sandboxUrl, productionUrl, sandboxMethods, prodcutionMethods
-}
+  sandboxUrl,
+  productionUrl,
+  sandboxMethods,
+  prodcutionMethods,
+};
