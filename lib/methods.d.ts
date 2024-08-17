@@ -1,4 +1,4 @@
-import { CountryCode, Credentials, PayloadOpts, UserOpts } from "./types";
+import { CountryCode, Credentials, UserOpts } from "./types";
 export declare const makePaymentUrl: ({ secrectKey, accessKey, sandbox }: Credentials, { amount, currency, merchant_reference, merchant_return_url, merchant_notification_url, preselected_aspsp, }: UserOpts) => string;
 /**
  * Displaying the List of Available Banks
@@ -6,4 +6,4 @@ export declare const makePaymentUrl: ({ secrectKey, accessKey, sandbox }: Creden
  * @returns List of available banks for a merchant.
  */
 export declare const getMethods: ({ accessKey, secrectKey, sandbox }: Credentials, lang: CountryCode) => Promise<any>;
-export declare const getToken: (payload: PayloadOpts, secrectKey: string) => string;
+export declare const getToken: ({ secrectKey, accessKey, sandbox }: Credentials) => string;
