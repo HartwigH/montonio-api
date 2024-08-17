@@ -36,13 +36,13 @@ export interface PayloadOpts {
 export interface PaymentMethodsTypes {
     accessKey: string;
 }
-export declare type CountryCode = "FI" | "EE" | "LV" | "LT";
+export type CountryCode = "FI" | "EE" | "LV" | "LT";
 interface Bank {
     bic: string;
     name: string;
     logo_url: string;
 }
-export declare type BankList = {
+export type BankList = {
     [key in CountryCode]: Bank[];
 };
 export {};
