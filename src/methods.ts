@@ -65,3 +65,11 @@ export const getMethods = async (
     return error;
   }
 };
+
+export const getToken = (payload: PayloadOpts, secrectKey: string) => {
+  const token = jwt.sign(payload, secrectKey, {
+    algorithm: "HS256",
+    expiresIn: "10m",
+  });
+  return token;
+};
