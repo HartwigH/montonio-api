@@ -49,7 +49,7 @@ export const getMethods = async (
   const baseUrl = sandbox ? config.sandboxMethods : config.prodcutionMethods;
   try {
     const payload = {
-      access_key: accessKey,
+      accessKey: accessKey,
     };
     console.log("payload", payload);
     const token = jwt.sign(payload, secrectKey, {
