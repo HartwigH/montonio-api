@@ -65,14 +65,3 @@ export const getMethods = async (
     return error;
   }
 };
-
-export const getToken = ({ secrectKey, accessKey, sandbox }: Credentials) => {
-  const payload = {
-    access_key: accessKey,
-  };
-  const token = jwt.sign(payload, secrectKey, {
-    algorithm: "HS256",
-    expiresIn: "10m",
-  });
-  return token;
-};

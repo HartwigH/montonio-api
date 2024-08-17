@@ -6,4 +6,3 @@ export declare const makePaymentUrl: ({ secrectKey, accessKey, sandbox }: Creden
  * @returns List of available banks for a merchant.
  */
 export declare const getMethods: ({ accessKey, secrectKey, sandbox }: Credentials, lang: CountryCode) => Promise<any>;
-export declare const getToken: ({ secrectKey, accessKey, sandbox }: Credentials) => string;
