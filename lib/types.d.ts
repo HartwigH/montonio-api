@@ -1,7 +1,7 @@
 export interface Credentials {
     accessKey: string;
     secrectKey: string;
-    sandbox?: Evn | false;
+    sandbox?: boolean;
 }
 export declare enum Evn {
     true = 0,
@@ -36,7 +36,7 @@ export interface PayloadOpts {
 export interface PaymentMethodsTypes {
     accessKey: string;
 }
-export declare type CountryCode = 'FI' | 'EE' | 'LV' | 'LT';
+export declare type CountryCode = "FI" | "EE" | "LV" | "LT";
 interface Bank {
     bic: string;
     name: string;
